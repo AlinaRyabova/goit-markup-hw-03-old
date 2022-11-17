@@ -24,6 +24,7 @@ body{
 .container{
     width: 1630px;
     padding: 0px 15px;
+    margin: 0 auto;
 }
 .list{
     list-style: none;
