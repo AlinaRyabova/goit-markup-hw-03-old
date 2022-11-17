@@ -4,6 +4,9 @@
     --accent-color: #757575;
     --primary-link-color: #2196F3;
 }
+p, h1, h2, h3, h4, h5, h6{
+    margin: 0px;
+}
 
 body{
     font-family: 'Roboto', sans-serif;
