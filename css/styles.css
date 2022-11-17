@@ -7,12 +7,23 @@
 p, h1, h2, h3, h4, h5, h6{
     margin: 0px;
 }
+ul{
+    margin: 0px;
+    padding-left: 0px;
+}
+button{
+    cursor: pointer;
+}
 
 body{
     font-family: 'Roboto', sans-serif;
     font-size: 14px;
     letter-spacing: 0.03em;
     background: #F5F5F5;
+}
+.container{
+    width: 1630px;
+    padding: 0px 15px;
 }
 .list{
     list-style: none;
