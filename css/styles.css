@@ -144,6 +144,9 @@ body{
     display: flex;
     text-align: center;
     margin-bottom: 34px;
+    background: #F5F4FA;
+    border-radius: 4px;
+    border-color:#F5F4FA;
 }
 
 
