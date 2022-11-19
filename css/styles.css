@@ -344,6 +344,7 @@ body{
     line-height: 1.19;
     color: var(--primary-header-color);
     
+    
 }
 .footer-accent-text {
     color: var(--primary-link-color);
@@ -355,12 +356,21 @@ body{
     line-height: 1.71;
     color: rgba(255, 255, 255, 0.6);
 }
+
 .footer-text-adress{
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
     color: var(--primary-header-color);
+    
+}
+.footer-contacts-list{
+    margin-top: 28px;
+}
+.footer-contacts-mail{
+    margin-top: 12px;
+    margin-bottom: 12px;
 }
 .footer-contacts :hover,
 .footer-contacts :focus {
