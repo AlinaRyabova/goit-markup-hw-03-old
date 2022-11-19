@@ -208,7 +208,7 @@ body{
     text-transform: uppercase;
     color: var(--primary-header-color);
     margin-bottom: 30px;
-    margin-top: 0px;
+    margin-bottom: 30px;
     
 }
 .main-btn {
