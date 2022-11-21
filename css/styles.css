@@ -29,6 +29,10 @@ body{
     padding: 0px 15px;
     margin: 0 auto;
 }
+.section{
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
 .list{
     list-style: none;
     padding: 0px;
@@ -39,6 +43,7 @@ body{
    
 }
 
+
 /*--------------------HEADER--------------------*/
 
 .header-logo {
@@ -46,26 +51,23 @@ body{
     font-size: 26px;
     line-height: 1.19;
     color: var(--second-header-color);
-    margin-right: 50px;
-    padding: 24px 0px;
+    margin-right: 93px;
+    padding-top: 24px;
+    padding-bottom: 25px;
 }
 .accent-text {
     color: var(--primary-link-color);
 }
 .header-text-studio{
     color: var(--primary-link-color);
+   
+    
 }
 .header-list{
-    display: flex;
-    margin-right: 50px;
-    
+    display: flex;  
 }
 .header-link {
     margin-right: 50px;
-    display: block;
-    padding-top: 32px;
-    padding-bottom: 32px;
-
 }
 .header-link:last-child{
     margin: right 0;
@@ -73,7 +75,6 @@ body{
 .header-nav{
     display: flex;
     align-items: center;
-    
 }
 .header-text {
     font-style: normal;
@@ -81,7 +82,6 @@ body{
     line-height: 1.14;
     letter-spacing: 0.02em;
     color: var(--second-header-color);
- 
 }
 .header-contacts{
     margin-left: 50px;
@@ -90,8 +90,6 @@ body{
     display: flex;
     margin-left: auto;
     margin-right: 50px;
-    padding-top: 32px;
-    padding-bottom: 32px;
 
 }
 .header-text-contacts{
@@ -120,11 +118,10 @@ body{
     list-style-type: none;
     font-family: inherit;
     margin-bottom: 34px;
-    display: inline-block;
+    
 }
 .portfolio{
-    padding-top: 94px;
-    padding-bottom: 94px;
+    background: #FFFFFF;
 }
 .portfolio-btn-active{
     font-family: inherit;
@@ -132,8 +129,7 @@ body{
     font-size: 16px;
     line-height: 1.62;
     color: var(--primary-header-color);
-    border-radius: 4px;
-    border-color:#F5F4FA;
+    border-color: #F5F4FA;
     background: var(--primary-link-color);
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
@@ -143,15 +139,17 @@ body{
     font-size: 16px;
     line-height: 1.62;
     background: #F5F4FA;
-    color: var(--second-header-color)
+    color: var(--second-header-color);
+    
+    border-radius: 4px;
+    border-color: #F5F4FA;
+}
+.portfolio-btn-card{
     display: flex;
+    justify-content: center;
     text-align: center;
     margin-bottom: 34px;
-    border-radius: 4px;
-    border-color:#F5F4FA;
 }
-
-
 .visually-hidden{
     visibility: hidden;
     position: absolute;
@@ -168,29 +166,34 @@ body{
 .portfolio-project-list {
     color: var(--second-header-color);
 }
-
-.portfolio-list{
-    list-style-type: none;
-}
 .portfolio-title {
-    font-style: normal;
     font-size: 18px;
     line-height: 2.00;
     letter-spacing: 0.06em;
     color: var(--second-header-color);
     margin-top: 20px;
+    margin-bottom: 4px;
 }
 .portfolio-pre-title {
-    font-style: normal;
-    font-style: normal;
-    font-weight: 500;
     font-size: 16px;
     line-height: 1.62;
+    letter-spacing: 0.03em;
     color: var(--accent-color);
 }
 .portfolio-project-list{
     display: flex;
+    max-width: 100%;
+    height: auto;
+    list-style-type: none;
+    display: flex;
     flex-wrap: wrap;
+    gap: 30px;
+}
+.portfolio-list{
+    flex-basis: calc((100% - 60px) / 3);
+}
+.portfolio-btn-link:not(:last-child){
+    margin-right: 8px;
 }
 /*--------------------MAIN--------------------*/
 .main-cap{
@@ -208,7 +211,9 @@ body{
     text-transform: uppercase;
     color: var(--primary-header-color);
     margin-bottom: 30px;
-    margin-bottom: 30px;
+    width: 696px;
+    margin-left: auto;
+    margin-right: auto;
     
 }
 .main-btn {
@@ -220,10 +225,10 @@ body{
     color: var(--primary-header-color);
     background: var(--primary-link-color);
     display: block;
-    border-radius: 4px;
     margin:  0px auto;
     min-width: 200px;
     height: 50px;
+    font-weight: 700;
 }
 
 .main-btn:hover,
@@ -234,17 +239,17 @@ body{
 /*--------------------FEATURE--------------------*/
 .feature-list-items{
     list-style-type: none;
-    
-    flex-wrap:nowrap;
 }
 .feature{
-    display: flex;
     margin-top: 0px;
     background: #F5F5F5;
 }
 .feature-list{
     display: flex;
+    flex-wrap: nowrap;
+    gap: 10px;
 }
+
 .feature-title {
     font-style: normal;
     font-size: 14px;
@@ -253,16 +258,14 @@ body{
     color: var(--second-header-color);
     margin-top:  0px;
     margin-bottom: 10px;
-    padding-top: 94px;
     }
+  
 .feature-title-text {
     font-style: normal;
     font-weight: 400;
     line-height: 1.71;
     color: var(--accent-color);
     margin-top: 0px;
-    margin-bottom: 94px;
-   
     }
 /*--------------------BOX--------------------*/
 .box-list-items{
@@ -273,6 +276,7 @@ body{
 .box{
     margin-top: 0px;
     background: #F5F5F5;
+    padding-top: 0px;
 }
 .box-list{
     display: flex;
@@ -289,7 +293,6 @@ body{
     text-align: center;
     color: var(--second-header-color);
     margin-bottom: 50px;
-    padding: 94px 0px;
 }
 
 /*--------------------TEAM--------------------*/
@@ -302,15 +305,12 @@ body{
     text-align: center;
     color: var(--second-header-color);
     margin-bottom: 50px;
-    padding-top: 94px;
 }
-.team-list-img{
-    list-style-type: none; 
-}
-.team-list{
-    display: flex;
-    margin-right: 30px;
+.team-list {
+    display: inline-flex;
     text-align: center;
+    gap: 30px;
+    padding-bottom: 94px;
 }
 .team-name {
     font-style: normal;
@@ -318,8 +318,9 @@ body{
     font-size: 16px;
     line-height: 1.18;
     color: var(--second-header-color);
-    margin-top: 30px;
     margin-bottom: 10px;
+    margin-top: 30px;
+    text-decoration: none;
 }
 .team-work {
     font-style: normal;
@@ -327,24 +328,27 @@ body{
     font-size: 16px;
     line-height: 1.18;
     color: var(--accent-color);
+    text-decoration: none;
     margin-bottom: 30px;
-    padding-bottom: 94px;
+}
+.card{
+    background: #FFFFFF;
 }
 
 /*--------------------FOOTER--------------------*/
-
 .footer {
     background: #2F303A;
     padding-top: 60px;
     padding-bottom: 60px;
+    display: flex;
 }
 .footer-logo {
     font-family: 'Raleway', sans-serif;
     font-size: 26px;
     line-height: 1.19;
     color: var(--primary-header-color);
-    
-    
+    margin-bottom: 20px;
+    display: inline-block;
 }
 .footer-accent-text {
     color: var(--primary-link-color);
@@ -356,7 +360,6 @@ body{
     line-height: 1.71;
     color: rgba(255, 255, 255, 0.6);
 }
-
 .footer-text-adress{
     font-style: normal;
     font-weight: 400;
@@ -365,12 +368,9 @@ body{
     color: var(--primary-header-color);
     
 }
-.footer-contacts-list{
-    margin-top: 28px;
-}
 .footer-contacts-mail{
-    margin-top: 12px;
-    margin-bottom: 12px;
+    margin-top: 9px;
+    margin-bottom: 9px;
 }
 .footer-contacts :hover,
 .footer-contacts :focus {
