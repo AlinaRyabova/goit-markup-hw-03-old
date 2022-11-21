@@ -190,7 +190,10 @@ body{
     gap: 30px;
 }
 .portfolio-list{
-    flex-basis: calc((100% - 60px) / 3);
+    flex-basis: calc((100% - 60px) / 3); 
+}
+.content-portfolio{
+    border: 1px solid #EEEEEE;
 }
 .portfolio-btn-link:not(:last-child){
     margin-right: 8px;
