@@ -22,7 +22,7 @@ body{
     font-family: 'Roboto', sans-serif;
     font-size: 14px;
     letter-spacing: 0.03em;
-    background: #F5F5F5;
+    background: var(--primary-header-color);
 }
 .container{
     width: 1200px;
@@ -44,7 +44,9 @@ body{
 
 
 /*--------------------HEADER--------------------*/
-
+.header{
+    border-color: #ECECEC;
+}
 .header-logo {
     font-family: 'Raleway', sans-serif;
     font-size: 26px;
@@ -53,6 +55,9 @@ body{
     margin-right: 93px;
     padding-top: 24px;
     padding-bottom: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 .accent-text {
     color: var(--primary-link-color);
@@ -60,19 +65,22 @@ body{
 .header-text-studio{
     color: var(--primary-link-color);
 }
+.header-nav{
+    display: flex;
+    align-items:  center;
+    margin-left: auto;
+}
 .header-list{
     display: flex;  
 }
-.header-link {
+.header-list :not(:last-child) {
     margin-right: 50px;
+  }
+
+.header-link :not(:last-child){
+    margin-right: 0px;
 }
-.header-link:last-child{
-    margin: right 0;
-}
-.header-nav{
-    display: flex;
-    align-items: center;
-}
+
 .header-text {
     font-style: normal;
     font-weight: 500;
@@ -80,14 +88,14 @@ body{
     letter-spacing: 0.02em;
     color: var(--second-header-color);
 }
-.header-contacts{
-    margin-left: 50px;
-}
 .header-list-contacts{
     display: flex;
-    margin-left: auto;
+    margin: auto;
+
+ }
+.header-contacts:not(:last-child){
     margin-right: 50px;
-}
+  }
 .header-text-contacts{
     font-style: normal;
     font-weight: 500;
@@ -113,10 +121,10 @@ body{
 .portfolio-btn-link{
     list-style-type: none;
     font-family: inherit;
-    margin-bottom: 34px;
 }
 .portfolio{
     background: #FFFFFF;
+    
 }
 .portfolio-btn-active{
     font-family: inherit;
@@ -124,9 +132,10 @@ body{
     font-size: 16px;
     line-height: 1.62;
     color: var(--primary-header-color);
-    border-color: #F5F4FA;
+    border: none;
     background: var(--primary-link-color);
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
 }
 .portfolio-btn{
     font-family: inherit;
@@ -136,13 +145,13 @@ body{
     background: #F5F4FA;
     color: var(--second-header-color);
     border-radius: 4px;
-    border-color: #F5F4FA;
+    border: none;
 }
 .portfolio-btn-card{
     display: flex;
     justify-content: center;
     text-align: center;
-    margin-bottom: 34px;
+    margin-bottom: 50px;
 }
 .visually-hidden{
     visibility: hidden;
@@ -165,7 +174,6 @@ body{
     line-height: 2.00;
     letter-spacing: 0.06em;
     color: var(--second-header-color);
-    margin-top: 20px;
     margin-bottom: 4px;
 }
 .portfolio-pre-title {
@@ -187,7 +195,10 @@ body{
     flex-basis: calc((100% - 60px) / 3); 
 }
 .content-portfolio{
-    border: 1px solid #EEEEEE;
+    border-right:1px solid #EEEEEE;
+    border-left: 1px solid #EEEEEE;
+    border-bottom: 1px solid #EEEEEE;
+    padding: 20px 24px;
 }
 .portfolio-btn-link:not(:last-child){
     margin-right: 8px;
@@ -225,6 +236,7 @@ body{
     min-width: 200px;
     height: 50px;
     font-weight: 700;
+    border-radius: 4px;
 }
 
 .main-btn:hover,
@@ -238,7 +250,7 @@ body{
 }
 .feature{
     margin-top: 0px;
-    background: #F5F5F5;
+    background: var(--primary-header-color);
 }
 .feature-list{
     display: flex;
@@ -271,7 +283,7 @@ body{
 }
 .box{
     margin-top: 0px;
-    background: #F5F5F5;
+    background: var(--primary-header-color);
     padding-top: 0px;
 }
 .box-list{
@@ -306,7 +318,6 @@ body{
     display: inline-flex;
     text-align: center;
     gap: 30px;
-    padding-bottom: 94px;
 }
 .team-name {
     font-style: normal;
@@ -315,7 +326,6 @@ body{
     line-height: 1.18;
     color: var(--second-header-color);
     margin-bottom: 10px;
-    margin-top: 30px;
     text-decoration: none;
 }
 .team-work {
@@ -325,10 +335,13 @@ body{
     line-height: 1.18;
     color: var(--accent-color);
     text-decoration: none;
-    margin-bottom: 30px;
 }
 .card{
     background: #FFFFFF;
+}
+.content{
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 /*--------------------FOOTER--------------------*/
