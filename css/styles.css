@@ -55,9 +55,6 @@ body{
     margin-right: 93px;
     padding-top: 24px;
     padding-bottom: 25px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
 }
 .accent-text {
     color: var(--primary-link-color);
@@ -69,6 +66,7 @@ body{
     display: flex;
     align-items:  center;
     margin-left: auto;
+    justify-content: space-between;
 }
 .header-list{
     display: flex;  
@@ -93,7 +91,7 @@ body{
     margin: auto;
 
  }
-.header-contacts:not(:last-child){
+ .header-contacts:not(:last-child){
     margin-right: 50px;
   }
 .header-text-contacts{
