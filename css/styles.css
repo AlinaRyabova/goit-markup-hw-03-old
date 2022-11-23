@@ -122,7 +122,6 @@ body{
 }
 .portfolio{
     background: #FFFFFF;
-    
 }
 .portfolio-btn-active{
     font-family: inherit;
@@ -199,7 +198,7 @@ body{
     padding: 20px 24px;
 }
 .portfolio-btn-link{
-    padding: 6px 22px;
+    padding: 22px 6px;
     display: inline-block;
     min-width: 73px;
 }
