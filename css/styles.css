@@ -75,10 +75,6 @@ body{
     margin-right: 50px;
   }
 
-.header-link :not(:last-child){
-    margin-right: 0px;
-}
-
 .header-text {
     font-style: normal;
     font-weight: 500;
@@ -88,8 +84,6 @@ body{
 }
 .header-list-contacts{
     display: flex;
-    margin: auto;
-
  }
  .header-contacts:not(:last-child){
     margin-right: 50px;
