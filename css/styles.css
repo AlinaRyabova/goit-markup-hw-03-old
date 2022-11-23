@@ -66,10 +66,11 @@ body{
     display: flex;
     align-items:  center;
     margin-left: auto;
-    justify-content: space-between;
+   
 }
 .header-list{
     display: flex;  
+    margin-left: auto;
 }
 .header-list :not(:last-child) {
     margin-right: 50px;
@@ -84,6 +85,11 @@ body{
 }
 .header-list-contacts{
     display: flex;
+    margin-left: auto;
+    
+ }
+ .header-link{
+    margin-left: 0px;
  }
  .header-contacts:not(:last-child){
     margin-right: 50px;
@@ -192,8 +198,10 @@ body{
     border-bottom: 1px solid #EEEEEE;
     padding: 20px 24px;
 }
-.portfolio-btn-link:not(:last-child){
-    margin-right: 8px;
+.portfolio-btn-link{
+    padding: 6px 22px;
+    display: inline-block;
+    min-width: 73px;
 }
 /*--------------------MAIN--------------------*/
 .main-cap{
@@ -229,8 +237,8 @@ body{
     height: 50px;
     font-weight: 700;
     border-radius: 4px;
+    border: none;
 }
-
 .main-btn:hover,
 .main-btn:focus {
     cursor: pointer;
@@ -247,7 +255,7 @@ body{
 .feature-list{
     display: flex;
     flex-wrap: nowrap;
-    gap: 10px;
+    gap: 30px;
 }
 
 .feature-title {
