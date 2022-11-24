@@ -70,7 +70,6 @@ body{
 }
 .header-list{
     display: flex;  
-    margin-left: auto;
 }
 .header-list :not(:last-child) {
     margin-right: 50px;
