@@ -515,9 +515,9 @@ body{
 .footer-box{
     display: inline-block;
 }
-.footer-soc-box{
+.footer-soc{
     display: inline-block;
-    align-items: baseline;
+    
 }
 .footer-title{
     font-family: 'Roboto';
@@ -528,5 +528,10 @@ body{
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #FFFFFF;
+    margin-bottom: 20px;
+}
+.footer-soc-box{
+    display: flex;
+    align-items: baseline;
 }
 
